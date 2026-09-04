@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Museo San Rafael | Itauguá</title>
+
+<meta name="description" content="Página informativa del Museo Parroquial de Arte Colonial Religioso y Antropológico San Rafael de Itauguá.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--celeste:#66c7e8;
+--celeste-claro:#eaf9fe;
+--celeste-medio:#b9eaf7;
+--azul:#176b87;
+--azul-oscuro:#104c62;
+--blanco:#fff;
+--gris:#f5f8fa;
+--texto:#26343b;
+--sombra:0 12px 30px rgba(23,107,135,.12);
+--radio:20px;
+}
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Montserrat',sans-serif;
+color:var(--texto);
+background:#fff;
+line-height:1.7;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+.container{
+width:min(1120px,92%);
+margin:auto;
+}
+
+/* ENCABEZADO */
+
+header{
+position:sticky;
+top:0;
+z-index:1000;
+background:rgba(255,255,255,.96);
+backdrop-filter:blur(10px);
+box-shadow:0 2px 16px rgba(0,0,0,.06);
+}
+
+.nav{
+min-height:76px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:20px;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+font-weight:800;
+color:var(--azul-oscuro);
+}
+
+.logo-mark{
+width:45px;
+height:45px;
+border-radius:50%;
+background:linear-gradient(135deg,var(--celeste),var(--azul));
+color:#fff;
+display:grid;
+place-items:center;
+font-size:20px;
+}
+
+.logo span{
+font-size:14px;
+line-height:1.2;
+}
+
+nav ul{
+display:flex;
+gap:24px;
+list-style:none;
+align-items:center;
+}
+
+nav a{
+font-size:14px;
+font-weight:600;
+color:#36535e;
+transition:.2s;
+}
+
+nav a:hover{
+color:var(--azul);
+}
+
+.menu-btn{
+display:none;
+border:0;
+background:var(--celeste);
+color:white;
+padding:9px 12px;
+border-radius:10px;
+font-size:20px;
+}
+
+/* PORTADA */
+
+.hero {
+    min-height: 750px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background-color: #66c7e8;
+    background: url('IMG-20260824-WA0086.jpg') center center / cover no-repeat;
+    padding: 100px 20px;
+}
+.badge {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #104c62;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 55px;
+    margin: 25px 0 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    border-radius: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 25px;
+}
+
+.btn-primary {
+    background: #66c7e8;
+    color: white;
+}/* SECCIONES */
+
+section{
+padding:85px 0;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:45px;
+}
+
+.section-title span{
+color:var(--azul);
+font-weight:800;
+font-size:12px;
+text-transform:uppercase;
+letter-spacing:2px;
+}
+
+.section-title h2{
+font-family:'Playfair Display',serif;
+font-size:40px;
+color:var(--azul-oscuro);
+margin:7px 0 10px;
+}
+
+.section-title p{
+max-width:720px;
+margin:auto;
+color:#657780;
+}
+
+/* INTRODUCCIÓN */
+
+.intro{
+background:var(--celeste-claro);
+}
+
+.intro-grid{
+display:grid;
+grid-template-columns:1.1fr .9fr;
+gap:45px;
+align-items:center;
+}
+
+.intro-text h3{
+font-family:'Playfair Display',serif;
+font-size:31px;
+color:var(--azul-oscuro);
+margin-bottom:15px;
+}
+
+.intro-text p{
+margin-bottom:14px;
+}
+
+.info-card{
+background:#fff;
+padding:30px;
+border-radius:var(--radio);
+box-shadow:var(--sombra);
+border-top:5px solid var(--celeste);
+}
+
+.info-card h3{
+color:var(--azul-oscuro);
+margin-bottom:15px;
+}
+
+.info-list{
+list-style:none;
+}
+
+.info-list li{
+padding:10px 0;
+border-bottom:1px solid #e7f1f4;
+font-size:14px;
+}
+
+.info-list li:last-child{
+border:0;
+}
+
+.info-list b{
+color:var(--azul);
+}
+
+/* HISTORIA */
+
+.history{
+background:var(--gris);
+}
+
+.timeline{
+max-width:850px;
+margin:auto;
+position:relative;
+}
+
+.timeline:before{
+content:"";
+position:absolute;
+left:24px;
+top:0;
+bottom:0;
+width:3px;
+background:var(--celeste-medio);
+}
+
+.timeline-item{
+position:relative;
+padding:0 0 30px 70px;
+}
+
+.timeline-dot{
+position:absolute;
+left:12px;
+top:4px;
+width:27px;
+height:27px;
+border-radius:50%;
+background:var(--celeste);
+border:6px solid #eaf9fe;
+}
+
+.timeline-year{
+font-weight:800;
+color:var(--azul);
+font-size:18px;
+}
+
+.timeline-item h3{
+color:var(--azul-oscuro);
+margin:3px 0;
+}
+
+/* FOTOS */
+
+.fotos{
+background:#fff;
+}
+
+.galeria{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+max-width:1000px;
+margin:auto;
+}
+
+.foto{
+width:100%;
+height:260px;
+object-fit:cover;
+border-radius:18px;
+box-shadow:var(--sombra);
+border:4px solid var(--celeste-claro);
+transition:.3s;
+}
+
+.foto:hover{
+transform:scale(1.02);
+}
+
+/* VIDEO */
+
+.video-box{
+max-width:850px;
+margin:55px auto 0;
+text-align:center;
+}
+
+.video-box h3{
+font-family:'Playfair Display',serif;
+font-size:28px;
+color:var(--azul-oscuro);
+margin-bottom:10px;
+}
+
+.video-box p{
+color:#657780;
+margin-bottom:20px;
+}
+
+.video{
+width:100%;
+max-height:500px;
+border-radius:20px;
+box-shadow:var(--sombra);
+}
+
+/* PROYECTO */
+
+.project{
+background:linear-gradient(135deg,var(--azul-oscuro),var(--azul));
+color:#fff;
+}
+
+.project .section-title h2,
+.project .section-title span{
+color:#fff;
+}
+
+.project .section-title p{
+color:#e2f7fc;
+}
+
+.objectives{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+.objective{
+background:rgba(255,255,255,.1);
+border:1px solid rgba(255,255,255,.18);
+border-radius:18px;
+padding:24px;
+}
+
+.objective h3{
+margin-bottom:8px;
+}
+
+.objective ul{
+padding-left:20px;
+}
+/* CONTACTO */
+
+.contact{
+background:#fff;
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+}
+
+.contact-box{
+background:var(--celeste-claro);
+border-radius:var(--radio);
+padding:30px;
+}
+
+.contact-box h3{
+color:var(--azul-oscuro);
+margin-bottom:12px;
+}
+
+.contact-box p{
+margin:8px 0;
+}
+
+/* PIE */
+
+footer{
+background:#0d4255;
+color:#dff6fc;
+text-align:center;
+padding:35px 20px;
+}
+
+footer strong{
+color:#fff;
+}
+
+.small{
+font-size:12px;
+margin-top:8px;
+color:#b9dbe4;
+}
+
+/* CELULAR */
+
+@media(max-width:850px){
+
+nav ul{
+display:none;
+position:absolute;
+left:0;
+right:0;
+top:76px;
+background:#fff;
+flex-direction:column;
+padding:22px;
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+nav ul.show{
+display:flex;
+}
+
+.menu-btn{
+display:block;
+}
+
+.intro-grid,
+.contact-grid,
+.objectives,
+.legal-grid{
+grid-template-columns:1fr;
+}
+
+.cards{
+grid-template-columns:1fr;
+}
+
+.galeria{
+grid-template-columns:1fr 1fr;
+}
+
+.foto{
+height:220px;
+}
+
+section{
+padding:65px 0;
+}
+
+}
+
+@media(max-width:500px){
+
+.galeria{
+grid-template-columns:1fr;
+}
+
+.foto{
+height:250px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ENCABEZADO -->
+
+<header>
+
+<div class="container nav">
+
+<a href="#inicio" class="logo">
+
+<div class="logo-mark">✦</div>
+
+<span>
+MUSEO SAN RAFAEL<br>
+<small>Itauguá, Paraguay</small>
+</span>
+
+</a>
+
+<button class="menu-btn" onclick="toggleMenu()" aria-label="Abrir menú">
+☰
+</button>
+
+<nav>
+    <ul id="menu">
+      <li><a href="#inicio">Inicio</a></li>
+<li><a href="#museo">El Museo</a></li>
+<li><a href="#historia">Historia</a></li>
+<li><a href="#fotos">Fotos</a></li>
+<li><a href="#video">Video</a></li>
+<li><a href="#proyecto">Proyecto</a></li>
+<li><a href="#fuentes">Fuentes</a></li>
+<li><a href="#contacto">Contacto</a></li>
+
+    </ul>
+</nav>
+</header>
+
+<main>
+<main>
+
+<!-- ==================== PORTADA ==================== -->
+
+<section class="hero" id="inicio">
+
+    <div class="hero-content">
+
+        <div class="badge">
+            PATRIMONIO HISTÓRICO Y CULTURAL DE ITAUGUÁ
+        </div>
+
+    
+        <p>
+ </br>
+<div class="badge">
+
+            Un espacio donde se conservan la historia, el arte religioso,
+            las tradiciones y parte de la memoria cultural del Paraguay.
+</div>
+        </p>
+</br></br>
+
+        <a class="btn btn-primary" href="#museo">
+            Conocer el museo
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- EL MUSEO -->
+
+<section>
+<</section>
+</section>
+<!-- EL MUSEO -->
+
+<section class="intro" id="museo">
+
+<div class="container intro-grid">
+
+<div class="intro-text">
+
+<h3>
+Un lugar para conocer nuestra historia
+</h3>
+
+<p>
+El Museo Parroquial de Arte Colonial Religioso y Antropológico
+San Rafael es uno de los espacios culturales más importantes
+de la ciudad de Itauguá.
+</p>
+
+<p>
+Fue habilitado en 1964 y conserva imágenes religiosas antiguas,
+objetos históricos, piezas de arte popular y elementos relacionados
+con la historia y la cultura paraguaya.
+</p>
+
+<p>
+Esta página web fue creada como proyecto académico para organizar
+y presentar información sobre el museo de una manera clara,
+accesible y atractiva.
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<h3>
+Datos del museo
+</h3>
+
+<ul class="info-list">
+
+<li>
+<b>Nombre:</b>
+Museo Parroquial de Arte Colonial Religioso y Antropológico San Rafael
+</li>
+
+<li>
+<b>Ciudad:</b>
+Itauguá, Paraguay
+</li>
+
+<li>
+<b>Habilitado:</b>
+1964
+</li>
+
+<li>
+<b>Ubicación:</b>
+Centro histórico de Itauguá, detrás de la iglesia Virgen del Rosario
+</li>
+
+<li>
+<b>Edificación:</b>
+Construcción colonial de aproximadamente 1820
+<h3>¿Qué podemos encontrar?</h3>
+
+<ul>
+    <li>Imágenes religiosas antiguas.</li>
+    <li>Objetos y piezas de arte colonial.</li>
+    <li>Elementos relacionados con la historia de Itauguá.</li>
+    <li>Objetos de arte popular y artesanías.</li>
+    <li>Piezas relacionadas con el Ñandutí.</li>
+    <li>Objetos históricos de diferentes épocas.</li>
+    <li>Libros y objetos personales.</li>
+</ul>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- HISTORIA -->
+
+<section class="history" id="historia">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>
+Una historia que permanece
+</span>
+
+<h2>
+Historia del Museo
+</h2>
+
+<p>
+Algunos datos importantes sobre el origen y la evolución
+del Museo San Rafael.
+</p>
+
+</div>
+
+
+<div class="timeline">
+
+
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-year">
+Aproximadamente 1820
+</div>
+
+<h3>
+La antigua vivienda
+</h3>
+
+<p>
+La construcción donde funciona el museo corresponde a una de
+las primeras viviendas de Itauguá. Conserva características
+de la arquitectura colonial.
+</p>
+
+</div>
+
+
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-year">
+Antes de 1964
+</div>
+
+<h3>
+Recolección de piezas
+</h3>
+
+<p>
+El Dr. Mariano Celso Pedrozo comenzó a recolectar imágenes
+y piezas antiguas con el objetivo de preservar elementos
+del patrimonio religioso y cultural.
+</p>
+
+</div>
+
+
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-year">
+1964
+</div>
+
+<h3>
+Habilitación del museo
+</h3>
+
+<p>
+El Museo San Rafael fue habilitado como museo religioso,
+antropológico e histórico parroquial, convirtiéndose en
+un importante espacio cultural del interior del país.
+</p>
+
+</div>
+
+
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-year">
+Actualidad
+</div>
+
+<h3>
+Preservar y compartir
+</h3>
+
+<p>
+El museo continúa conservando piezas religiosas, objetos
+históricos, artesanía y parte de la memoria cultural de
+Itauguá y del Paraguay.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOTOS -->
+
+<section class="fotos" id="fotos">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>
+Galería
+</span>
+
+<h2>
+Fotos
+</h2>
+
+<p>
+</p>
+
+</div>
+
+
+<div class="galeria">
+<img class="foto"
+src="C:\Users\monic\OneDrive\Desktop\IMG-20260824-WA0086.jpg"
+alt="">
+
+<img class="foto"
+src="C:\Users\monic\OneDrive\Desktop\IMG-20260824-WA0083.jpg"
+alt="">
+
+<img class="foto"
+src="C:\Users\monic\OneDrive\Desktop\IMG-20260824-WA0085.jpg"
+alt="">
+
+<img class="foto"
+src="C:\Users\monic\OneDrive\Desktop\IMG-20260824-WA0084.jpg"
+alt="">
+
+<img class="foto"
+src="C:\Users\monic\OneDrive\Desktop\IMG-20260824-WA0087.jpg"
+alt="">
+
+</div>
+
+
+<!-- VIDEO -->
+
+<div class="video-box" id="video">
+<h3>
+Conocé el museo
+</h3>
+<p>
+Video del exterior del Museo San Rafael en la actualidad.
+</p>
+<video class="video" controls>
+<source src="C:\Users\monic\OneDrive\Desktop\20260725_133028_1_1.mp4" 
+</video>
+</div>
+
+<!-- PROYECTO -->
+
+<section class="project" id="proyecto">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>
+Proyecto académico 2026
+</span>
+
+<h2>
+Diseño de una página web
+</h2>
+
+<p>
+    Este proyecto busca facilitar el acceso a información sobre la historia,
+    el patrimonio y los principales elementos del Museo San Rafael.
+    A través de esta página web se presenta información organizada de manera
+    clara y sencilla, acompañada de fotografías y otros recursos que permiten
+    conocer mejor la importancia del museo para la ciudad de Itauguá.
+</p></div>
+
+
+<div class="objectives">
+
+
+<div class="objective">
+
+<h3>
+Objetivo general
+</h3>
+
+<p>
+Diseñar una página web que permita presentar información
+sobre la historia del museo y sus principales colecciones,
+facilitando el acceso rápido a la información mediante HTML.
+</p>
+
+</div>
+
+
+<div class="objective">
+
+<h3>
+Objetivos específicos
+</h3>
+
+<ul>
+
+<li>
+Visitar el museo para conocer sus piezas y su historia.
+</li>
+
+<li>
+Realizar entrevistas para obtener información.
+</li>
+
+<li>
+Organizar los datos e imágenes más relevantes.
+</li>
+
+<li>
+Crear una página web informativa.
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- FUENTES DE INFORMACIÓN -->
+<section id="fuentes" style="
+    background-color: #eaf9fe;
+    padding: 80px 20px;
+    font-family: 'Montserrat', sans-serif;
+">
+
+    <div style="
+        max-width: 1100px;
+        margin: auto;
+        text-align: center;
+    ">
+
+        <!-- TÍTULO -->
+        <div style="margin-bottom: 35px;">
+
+            <span style="
+                color: #66c7e8;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-size: 14px;
+            ">
+                Referencias
+            </span>
+
+            <h2 style="
+                color: #104c62;
+                font-family: 'Playfair Display', serif;
+                font-size: 38px;
+                margin: 10px 0 15px;
+            ">
+                Fuentes de información
+            </h2>
+
+            <p style="
+                color: #26343b;
+                max-width: 800px;
+                margin: auto;
+                line-height: 1.7;
+                font-size: 16px;
+            ">
+                La información presentada en esta página web fue recopilada
+                a partir de diferentes fuentes utilizadas durante la realización
+                del proyecto académico sobre el Museo Parroquial San Rafael de Itauguá.
+            </p>
+
+        </div>
+
+
+        <!-- CAJA DE FUENTES -->
+        <div style="
+            max-width: 900px;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 35px 45px;
+            border-radius: 20px;
+            box-shadow: 0 12px 30px rgba(23,107,135,.12);
+            border-left: 5px solid #66c7e8;
+            text-align: left;
+        ">
+
+            <ul style="
+                padding-left: 25px;
+                margin: 0;
+                color: #26343b;
+                line-height: 1.7;
+            ">
+
+                <li style="margin-bottom: 15px;">
+                    Información histórica y cultural recopilada sobre el
+                    Museo Parroquial San Rafael de Itauguá.
+                </li>
+
+                <li style="margin-bottom: 15px;">
+                    Información obtenida mediante la observación y visita
+                    al museo.
+                </li>
+
+                <li style="margin-bottom: 15px;">
+                    Datos recopilados durante el proceso de investigación
+                    realizado para este proyecto académico.
+                </li>
+
+                <li style="margin-bottom: 15px;">
+                    Información relacionada con la historia, cultura y
+                    patrimonio cultural de la ciudad de Itauguá.
+                </li>
+
+                <li style="margin-bottom: 15px;">
+                    Fotografías propias tomadas durante la visita al museo.
+                </li>
+
+                <li>
+                    Video propio realizado como registro visual del exterior
+                    del Museo Parroquial San Rafael.
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section><!-- CONTACTO -->
+
+<section class="contact" id="contacto">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>
+Visitá Itauguá
+</span>
+
+<h2>
+Información
+</h2>
+
+<p>
+El museo forma parte del patrimonio cultural de la ciudad
+y constituye un espacio para conocer y valorar nuestra historia.
+</p>
+
+</div>
+
+
+<div class="contact-grid">
+
+
+<div class="contact-box">
+
+<h3>
+📍 Ubicación
+</h3>
+
+<p>
+Centro histórico de Itauguá, detrás de la iglesia Virgen del Rosario.
+</p>
+
+<p>
+<strong>
+Dirección de referencia:
+</strong>
+
+Av. Francisco Caballero Álvarez entre Defensores del Chaco
+y Teniente Martínez.
+</p>
+
+</div>
+
+
+<div class="contact-box">
+
+<h3>
+🎓 Proyecto
+</h3>
+
+<p>
+<strong>Institución:</strong>
+Colegio Dr. Mariano Celso Pedrozo
+</p>
+
+<p>
+<strong>Curso:</strong>
+Tercer Año – Bachillerato Técnico en Informática
+</p>
+
+<p>
+<strong>Año:</strong>
+2026
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+
+<!-- PIE DE PÁGINA -->
+
+<footer>
+
+<p>
+<strong>
+Museo Parroquial de Arte Colonial Religioso y Antropológico San Rafael
+</strong>
+</p>
+
+<p>
+Itauguá, Paraguay · Proyecto académico 2026
+</p>
+
+<p class="small">
+Página web desarrollada para proyecto académico.
+</p>
+
+</footer>
+
+
+<script>
+
+function toggleMenu(){
+
+document.getElementById('menu').classList.toggle('show');
+
+}
+
+document.querySelectorAll('#menu a').forEach(link=>{
+
+link.addEventListener('click',()=>{
+
+document.getElementById('menu').classList.remove('show');
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
